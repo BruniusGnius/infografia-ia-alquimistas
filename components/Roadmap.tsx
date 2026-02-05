@@ -54,7 +54,7 @@ const Roadmap: React.FC = () => {
                     </div>
 
                     {/* Content */}
-                    <div className={`ml-20 md:ml-0 w-full md:w-1/2 ${index % 2 === 0 ? 'md:pl-16 text-left' : 'md:pr-16 md:text-right'}`}>
+                    <div className={`ml-20 md:ml-0 w-full md:w-1/2 ${index % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:pl-16 md:text-left'}`}>
                         <span className="text-brand-gold text-sm font-black tracking-widest mb-2 block">{step.week}</span>
                         <h4 className="text-3xl font-condensed font-black text-white mb-3 uppercase leading-none">{step.title}</h4>
                         <p className="text-gray-200 text-lg font-medium leading-relaxed">{step.desc}</p>
