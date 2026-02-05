@@ -53,18 +53,11 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 className="cta-button relative block text-xl md:text-3xl px-12 py-6 shadow-[0_0_30px_rgba(240,185,11,0.3)]"
             >
-                [ BLINDAR MI CARRERA AHORA > ]
+                [ BLINDAR MI CARRERA AHORA ]
             </a>
         </div>
 
-        <div className="mt-16 pt-10 border-t border-brand-border">
-             <p className="text-gray-300 font-bold text-base mb-3 uppercase tracking-wide">
-                Tarifas especiales para Familias y Equipos:
-            </p>
-            <a href="mailto:lilo@gnius.club" className="text-brand-gold hover:text-white transition-colors text-xl font-black tracking-wide font-saira">
-                lilo@gnius.club
-            </a>
-        </div>
+        
 
         {/* Sources Section */}
         <div className="mt-24 pt-8 border-t border-brand-border/20 text-left">
