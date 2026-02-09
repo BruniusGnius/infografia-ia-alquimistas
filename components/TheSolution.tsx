@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Zap, Clock, Bot, Terminal } from 'lucide-react';
+import { generarLinkConUTM } from '../src/utils/utm';
 
 const SolutionCard: React.FC<{ icon: React.ReactNode; title: string; stat?: string; desc: string; note: string }> = ({ icon, title, stat, desc, note }) => (
   <div className="benefit-card border-2 border-brand-border bg-brand-surface/40 p-8 rounded-xl relative hover:border-brand-gold transition-colors duration-300 group">
@@ -21,6 +22,11 @@ const SolutionCard: React.FC<{ icon: React.ReactNode; title: string; stat?: stri
 );
 
 const TheSolution: React.FC = () => {
+  // Generamos el link con UTMs para la imagen clickable
+  const linkCompra = useMemo(() => {
+    return generarLinkConUTM("https://alquimistas.gnius.club");
+  }, []);
+
   return (
     <section className="mb-32">
       {/* Header Block */}
@@ -35,14 +41,16 @@ const TheSolution: React.FC = () => {
 
       {/* Hero Image Insert */}
       <div className="relative w-full aspect-video mb-16 rounded-xl overflow-hidden border-2 border-brand-border shadow-[0_0_40px_rgba(240,185,11,0.15)] group">
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-black/80 via-transparent to-transparent z-10 pointer-events-none"></div>
-        <img 
-            src="https://alquimistas.gnius.club/assets/ia-al-servicio-del-alquimista-v3.jpg" 
-            alt="IA al servicio del Alquimista" 
-            className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out opacity-90 group-hover:opacity-100"
-        />
-        {/* Decorative Overlay Frame */}
-        <div className="absolute inset-0 border-4 border-white/5 z-20 pointer-events-none rounded-xl"></div>
+        <a href={linkCompra} target="_blank" rel="noopener noreferrer" className="block w-full h-full cursor-pointer">
+            <div className="absolute inset-0 bg-gradient-to-t from-brand-black/80 via-transparent to-transparent z-10 pointer-events-none"></div>
+            <img 
+                src="https://alquimistas.gnius.club/assets/ia-al-servicio-del-alquimista-v3.jpg" 
+                alt="IA al servicio del Alquimista" 
+                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out opacity-90 group-hover:opacity-100"
+            />
+            {/* Decorative Overlay Frame */}
+            <div className="absolute inset-0 border-4 border-white/5 z-20 pointer-events-none rounded-xl"></div>
+        </a>
       </div>
 
       {/* Grid */}

@@ -17,7 +17,7 @@ const TheMyth: React.FC = () => {
             
             <blockquote className="text-3xl md:text-5xl font-condensed font-black text-white leading-none mb-8">
             "La IA no te reemplazará. <br/>
-            <span className="text-gray-500">Alguien que use IA...</span> <span className="text-brand-gold bg-brand-gold/10 px-2">sí lo hará.</span>"
+            <span className="text-white">Alguien que use IA...</span> <span className="text-brand-gold bg-brand-gold/10 px-2">sí lo hará.</span>"
             </blockquote>
         </div>
 
@@ -66,7 +66,7 @@ const TheMyth: React.FC = () => {
                  <div className="space-y-4 relative z-10">
                     <div className="flex items-start gap-3">
                         <Check size={18} className="text-brand-gold mt-1 shrink-0" />
-                        <p className="text-white text-sm leading-relaxed">Completa la misma tarea en <strong className="text-brand-gold">15 minutos</strong> usando Code Interpreter.</p>
+                        <p className="text-white text-sm leading-relaxed">Completa la misma tarea en <strong className="text-brand-gold">15 minutos</strong> usando una IA que analiza y procesa datos por él.</p>
                     </div>
                     <div className="flex items-start gap-3">
                         <Check size={18} className="text-brand-gold mt-1 shrink-0" />

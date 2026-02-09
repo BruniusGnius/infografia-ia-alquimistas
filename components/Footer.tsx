@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { ExternalLink } from 'lucide-react';
+// Importamos desde la ubicación correcta en src/utils/utm
+import { generarLinkConUTM } from '../src/utils/utm';
 
 const sources = [
   { title: "Jobs of Tomorrow", source: "World Economic Forum", url: "https://www3.weforum.org/docs/WEF_Jobs_of_Tomorrow_Generative_AI_2023.pdf" },
@@ -29,6 +31,12 @@ const sources = [
 ];
 
 const Footer: React.FC = () => {
+  // Generamos el link con UTMs una sola vez al renderizar.
+  // URL DESTINO: Landing Page Principal (donde se selecciona fecha/grupo)
+  const linkCompra = useMemo(() => {
+    return generarLinkConUTM("https://alquimistas.gnius.club");
+  }, []);
+
   return (
     <footer className="bg-brand-black border-t border-brand-border pt-24 pb-0">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center pb-24">
@@ -48,7 +56,7 @@ const Footer: React.FC = () => {
         <div className="inline-block relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-brand-gold to-neon-red opacity-30 blur group-hover:opacity-60 transition duration-500"></div>
             <a 
-                href="https://alquimistas.gnius.club" 
+                href={linkCompra}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="cta-button relative block text-xl md:text-3xl px-12 py-6 shadow-[0_0_30px_rgba(240,185,11,0.3)]"
@@ -127,13 +135,13 @@ const Footer: React.FC = () => {
                         </svg>
                         <span>(+52) 221 848 1116</span>
                     </a>
-                    <a href="mailto:info@gnius.club"
+                    <a href="mailto:soporte@alquimistas.gnius.club"
                         className="flex items-center gap-2 hover:text-white transition-colors underline">
                         <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                             <path
                                 d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z" />
                         </svg>
-                        <span>info@gnius.club</span>
+                        <span>soporte@alquimistas.gnius.club</span>
                     </a>
                 </div>
                 <div className="mt-6 flex justify-center space-x-6 text-gray-400">

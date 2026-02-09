@@ -29,7 +29,7 @@ const Roadmap: React.FC = () => {
     ];
 
   return (
-    <section>
+    <section className="pb-16 ">
       <div className="flex items-baseline gap-4 mb-16">
         <span className="text-brand-gold font-mono text-2xl font-black">///</span>
         <h3 className="text-4xl md:text-5xl font-condensed font-black text-white uppercase tracking-tight leading-none">

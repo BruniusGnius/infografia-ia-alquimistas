@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
         {/* Updated Subtitle: Editorial Tone */}
         <h2 className="text-2xl md:text-4xl text-white font-condensed font-bold leading-tight max-w-4xl mx-auto mb-6 uppercase">
             La integración abrupta de la IA: <br className="hidden md:block"/>
-            <span className="text-brand-gold">Datos sorprendentes que redefinirán el trabajo en 2026.</span>
+            <span className="text-brand-gold">Datos sorprendentes que redefinirán <br></br> el trabajo en 2026.</span>
         </h2>
         
         <p className="text-gray-200 text-lg md:text-xl font-medium max-w-2xl mx-auto mt-6 leading-relaxed">
