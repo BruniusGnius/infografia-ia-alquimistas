@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-primary: #0a0a0a;
+  --background-secondary: #121212;
+  --surface-color: #1c1c1c;
+  --border-color: #333333;
+  --text-primary: #ffffff;
+  --text-secondary: #e5e5e5;
+  --accent-gold: #f0b90b;
+  --font-paragraph: 'Saira', sans-serif;
+  --font-heading: 'Saira Semi Condensed', sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+    font-family: var(--font-paragraph);
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+  }
+  
+  *, ::before, ::after {
+    --tw-ring-color: rgba(240, 185, 11, 0.5);
+  }
+}
+
+@layer utilities {
+  .bg-grid { background-size: 40px 40px; }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--background-primary); }
+::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent-gold); }
+
+/* Custom Components */
+.section-kicker {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #cccccc;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.cta-button {
+  display: inline-block;
+  background-image: linear-gradient(to top, #e8a900, #f0b90b);
+  color: var(--background-primary);
+  font-family: var(--font-heading);
+  font-size: 1.2em;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 8px;
+  text-align: center;
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cta-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(240, 185, 11, 0.25);
+}
+
+.text-shadow-gold {
+  text-shadow: 0 0 15px rgba(240, 185, 11, 0.5);
+}

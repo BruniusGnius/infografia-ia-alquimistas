@@ -24,16 +24,25 @@ const TheSolution: React.FC = () => {
   return (
     <section className="mb-32">
       {/* Header Block */}
-      <div className="flex flex-col md:flex-row items-end justify-between border-b-2 border-brand-border pb-8 mb-16">
+      <div className="flex flex-col md:flex-row items-end justify-between border-b-2 border-brand-border pb-8 mb-12">
         <div>
-            <span className="section-kicker mb-3">ARCHITECTURE V1.0</span>
+            <span className="section-kicker mb-3">LA SOLUCIÓN</span>
             <h3 className="text-4xl md:text-6xl font-condensed font-black text-white uppercase leading-none">
-              Protocolo de Solución
+              El Antídoto: <span className="text-brand-gold">Alquimistas de la IA</span>
             </h3>
         </div>
-        <div className="text-right hidden md:block">
-            <span className="bg-brand-gold text-brand-black font-black px-3 py-1 text-sm uppercase tracking-widest">GNIUS CLUB CERTIFIED</span>
-        </div>
+      </div>
+
+      {/* Hero Image Insert */}
+      <div className="relative w-full aspect-video mb-16 rounded-xl overflow-hidden border-2 border-brand-border shadow-[0_0_40px_rgba(240,185,11,0.15)] group">
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-black/80 via-transparent to-transparent z-10 pointer-events-none"></div>
+        <img 
+            src="https://alquimistas.gnius.club/assets/ia-al-servicio-del-alquimista-v3.jpg" 
+            alt="IA al servicio del Alquimista" 
+            className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out opacity-90 group-hover:opacity-100"
+        />
+        {/* Decorative Overlay Frame */}
+        <div className="absolute inset-0 border-4 border-white/5 z-20 pointer-events-none rounded-xl"></div>
       </div>
 
       {/* Grid */}

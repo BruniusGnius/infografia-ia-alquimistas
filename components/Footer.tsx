@@ -57,8 +57,6 @@ const Footer: React.FC = () => {
             </a>
         </div>
 
-        
-
         {/* Sources Section */}
         <div className="mt-24 pt-8 border-t border-brand-border/20 text-left">
             <h5 className="text-gray-500 font-bold uppercase text-xs tracking-widest mb-6">Fuentes Citadas & Referencias (Acceso Feb 2026)</h5>
@@ -119,7 +117,7 @@ const Footer: React.FC = () => {
 
             {/* 2. SECCIÓN CONTACTO */}
             <div className="text-center">
-                <p className="mt-6 text-2xl font-condensed font-bold text-white">CURSO ALQUIMISTAS</p>
+                <p className="mt-6 text-2xl font-condensed font-bold text-white">CURSO ALQUIMISTAS DE LA IA</p>
                 <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-gray-400">
                     <a href="https://wa.me/522218481116" target="_blank" rel="noopener noreferrer"
                         className="flex items-center gap-2 hover:text-white transition-colors underline">
@@ -142,7 +140,7 @@ const Footer: React.FC = () => {
                     <a href="https://gnius.club/aviso-de-privacidad.html"
                         className="hover:text-white transition-colors underline">Aviso de Privacidad</a>
                 </div>
-                <p className="mt-6 text-sm text-gray-500">&copy; 2026 Gnius Club - AlkIA. Todos los derechos
+                <p className="mt-6 text-sm text-gray-500">&copy; 2026 Gnius Club - Gnius Academy. Todos los derechos
                     reservados.
                 </p>
 

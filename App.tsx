@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import ImpactGrid from './components/ImpactGrid';
 import ResearchSummary from './components/ResearchSummary';
 import QuoteWall from './components/QuoteWall';
+import TheMyth from './components/TheMyth';
 
 const Separator: React.FC<{ text: string; source?: string }> = ({ text, source }) => (
   <div className="w-full border-y border-brand-border bg-brand-surface py-6 my-16 overflow-hidden relative">
@@ -44,14 +45,17 @@ const App: React.FC = () => {
         
         <RiskReward />
         
+        {/* Comparison Section - The Myth */}
+        <TheMyth />
+        
         {/* New Research Table */}
         <ResearchSummary />
 
         {/* Keeping the highlight quote as requested in previous turn, acting as a transition */}
         <div className="my-32 text-center max-w-5xl mx-auto px-4">
             <h2 className="text-3xl md:text-6xl font-condensed font-black text-white uppercase leading-none tracking-tight">
-                "La IA no te va a quitar el trabajo. <br/>
-                <span className="text-brand-gold drop-shadow-md">Una persona experta en IA</span> te va a reemplazar."
+                "El riesgo no es la IA. <br/>
+                <span className="text-brand-gold drop-shadow-md">El riesgo es ignorarla.</span>"
             </h2>
         </div>
 

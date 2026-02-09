@@ -9,6 +9,7 @@ const Hero: React.FC = () => {
       <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-brand-black to-transparent z-10"></div>
 
       <div className="relative z-20 max-w-5xl mx-auto px-4 sm:px-6 text-center">
+        
         <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-neon-red/10 border-2 border-neon-red rounded text-neon-red font-bold text-sm tracking-widest uppercase">
           <AlertTriangle size={18} strokeWidth={3} />
           <span>Alerta Global: Terremoto de Habilidades</span>

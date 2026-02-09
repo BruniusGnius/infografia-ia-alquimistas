@@ -32,8 +32,8 @@ const Roadmap: React.FC = () => {
     <section>
       <div className="flex items-baseline gap-4 mb-16">
         <span className="text-brand-gold font-mono text-2xl font-black">///</span>
-        <h3 className="text-4xl md:text-5xl font-condensed font-black text-white uppercase">
-          El Roadmap (4 Sprints)
+        <h3 className="text-4xl md:text-5xl font-condensed font-black text-white uppercase tracking-tight leading-none">
+          Roadmap: <br className="md:hidden" /> <span className="text-brand-gold">Prompting Estratégico</span>
         </h3>
       </div>
 
